@@ -1,15 +1,21 @@
-import pymysql, json, configparser
+import pymysql, json
+import toml
+import mysql.connector
 
+# import configparser
+# config = configparser.ConfigParser()
+# config.read('config.ini')
 
-config = configparser.ConfigParser()
-config.read('config.ini')
+# Reading data
+toml_data = toml.load(".streamlit\secrets.toml")
+# saving each credential into a variable
 
-host = config.get('mysql', 'host')
-port = int(config.get('mysql', 'port'))
-user = config.get('mysql', 'user')
-passwd = config.get('mysql', 'passwd')
-db = config.get('mysql', 'db')
-charset = config.get('mysql', 'charset')
+host = toml_data.get('mysql', 'host')
+port = toml_data.get('mysql', 'port')
+user = toml_data.get('mysql', 'user')
+passwd = toml_data.get('mysql', 'passwd')
+db = toml_data.get('mysql', 'db')
+charset = toml_data.get('mysql', 'charset')
 
 mark = {
     0: "FOAM",
@@ -101,7 +107,7 @@ product_url_dict = {
 
 
 def select_1(product_id):
-    conn = pymysql.connect(
+    conn = mysql.connector.connect(
         host=host, port=port, user=user, passwd=passwd, db=db, charset=charset
     )
     print("Successfully connected!")
