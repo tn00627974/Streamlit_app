@@ -1,4 +1,4 @@
-import pymysql, json
+import json
 import toml
 import mysql.connector
 
