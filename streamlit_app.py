@@ -3,16 +3,16 @@ import time
 # 定義產品資料
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
-# st.set_page_config(
-#     page_title="自定義網頁標題",
-#     page_icon="random",
-#     layout="centered",
-#     initial_sidebar_state="collapsed",
-# )
+st.set_page_config(
+    page_title="洗面乳推薦系統_Web",
+    page_icon="random",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+)
 
 
 # 設定頁面寬度
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 
 products_data = [
     {
@@ -39,7 +39,7 @@ products_data[0]["brand"] = "FOMA"
 st.title("洗面乳推薦系統")
 
 # 顯示標題
-st.title("產品展示")
+# st.title("產品展示")
 
 # 顯示每項產品的資訊
 for product in products_data:
@@ -58,5 +58,5 @@ for product in products_data:
     col2.write(f"**品牌:** {product['brand']}")
     col2.write(f"**產品名稱:** {product['name']}")
     col2.write(f"**星數:** {product['rating']}")
-    col2.write(f"**標籤:** {', '.join(product['tags'])}")
+    col2.write(f"**效果:** {', '.join(product['tags'])}")
     st.write("---")  # 分隔每項產品
