@@ -1,0 +1,7 @@
+[mysql]
+host = YOUR_DB_HOST
+port = YOUR_DB_PORT
+user = YOUR_DB_USER
+passwd = YOUR_DB_PASSWORD
+db = YOUR_DB_NAME
+charset = charset = utf8mb4
