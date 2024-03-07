@@ -1,62 +1,139 @@
 import streamlit as st
-import time
+from select_tool_v2 import select_1
 # 定義產品資料
+
+# This code is different for each deployed app.
+# CURRENT_THEME = "blue"
+# IS_DARK_THEME = True
+# EXPANDER_TEXT = """
+#     This is a custom theme. You can enable it by copying the following code
+#     to `.streamlit/config.toml`:
+
+#     ```python
+#     [theme]
+#     primaryColor = "#E694FF"
+#     backgroundColor = "#00172B"
+#     secondaryBackgroundColor = "#0083B8"
+#     textColor = "#C6CDD4"
+#     font = "sans-serif"
+#     ```
+#     """
+
+
+# with st.chat_message("user"):  # 或者寫 "human"
+#     st.write("Hi 👋，請問你是誰？")
+
+# # 另一種寫法
+# message = st.chat_message("assistant")  # 或者寫 "ai"
+# # message = st.chat_message("assistant", avatar="🦖")  # 自訂頭像
+# message.write("你好！我是 ChatBot 🤖，可以回答各種問題，提供資訊。")
+# message.write("有什麼我可以幫助你的嗎？")
+
+# st.chat_input("Say something...")
+
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
 st.set_page_config(
     page_title="洗面乳推薦系統_Web",
-    page_icon="random",
+    # page_icon="random",
     layout="centered",
-    initial_sidebar_state="collapsed",
+    # initial_sidebar_state="collapsed",
 )
 
 
-# 設定頁面寬度
-# st.set_page_config(layout="wide")
-
-products_data = [
-    {
-        "photo_url": "111.jpg",
-        "brand": "Brand1",
-        "name": "Product1",
-        "rating": 4.5,
-        "tags": ["Tag1", "Tag2"],
-    },
-    # 依此類推，總共18項產品
-]
-
-products_data[0]["brand"] = "FOMA"
-
+gif_url = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHl2d3cxdjMyOXBibXB0aXZuaWMwNzhocXRyNGxzOWhxZjJ4aHp3NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fpXkJeF3ppKUDX0Pp0/giphy.gif"
+st.image(gif_url, caption="洗面乳推薦系統", use_column_width=True)
 
 # bar = st.progress(1)
 # for i in range(3):
 #     bar.progress(i + 1, f'目前進度 {i+1} %')
 #     time.sleep(0.05)
-
 # bar.progress(100, '載入完成！')
 
-# 顯示標題
-st.title("洗面乳推薦系統")
 
-# 顯示標題
-# st.title("產品展示")
+mark = {
+        0: "FOAM", 1: "上山採藥", 2: "卵肌", 3: "極潤", 4: "極潤",
+        5: "豆乳", 6: "草本", 7: "Simple", 8: "Perfect Whip", 9: "雪肌粹",
+        10: "Biore", 11: "Biore", 12: "Bifesta", 13: "Biore", 14: "草本",
+        15: "Bifesta", 16: "Bifesta", 17: "Bifesta"
+}
+
+
+
+image_dict = {
+    0: "https://imgur.com/ojqgngi.jpg",
+    1: "https://imgur.com/tlAiF6h.jpg",
+    2: "https://imgur.com/GMueS4b.jpg",
+    3: "https://imgur.com/N9Omj8j.jpg",
+    4: "https://imgur.com/jYEZal6.jpg",
+    5: "https://imgur.com/OmgeQOn.jpg",
+    6: "https://imgur.com/JLAYFzr.jpg",
+    7: "https://imgur.com/q3mgxPe.jpg",
+    8: "https://imgur.com/iTWuoIU.jpg",
+    9: "https://imgur.com/jzy7shE.jpg",
+    10: "https://imgur.com/y95d5Rb.jpg",
+    11: "https://imgur.com/KMt0vV0.jpg",
+    12: "https://imgur.com/z63oxxf.jpg",
+    13: "https://imgur.com/U86lFJk.jpg",
+    14: "https://imgur.com/PIFIWCL.jpg",
+    15: "https://imgur.com/3s8yCHu.jpg",
+    16: "https://imgur.com/BjcObqE.jpg",
+    17: "https://imgur.com/hvUIe6p.jpg"
+}
+
+
+product_url_dict = {
+    0: "https://www.cosme.net.tw/products/87330/reviews",
+    1: "https://www.cosme.net.tw/products/4989/reviews",
+    2: "https://www.cosme.net.tw/products/85513/reviews",
+    3: "https://www.cosme.net.tw/products/79415/reviews/",
+    4: "https://www.cosme.net.tw/products/40527/reviews",
+    5: "https://www.cosme.net.tw/products/19398/reviews",
+    6: "https://www.cosme.net.tw/products/79637/reviews",
+    7: "https://www.cosme.net.tw/products/90191/reviews",
+    8: "https://www.cosme.net.tw/products/105363/reviews",
+    9: "https://www.cosme.net.tw/products/57958/reviews",
+    10: "https://www.cosme.net.tw/products/67787/reviews",
+    11: "https://www.cosme.net.tw/products/58118/reviews",
+    12: "https://www.cosme.net.tw/products/89784/reviews",
+    13: "https://www.cosme.net.tw/products/67788/reviews",
+    14: "https://www.cosme.net.tw/products/36729/reviews",
+    15: "https://www.cosme.net.tw/products/82073/reviews",
+    16: "https://www.cosme.net.tw/products/82072/reviews",
+    17: "https://www.cosme.net.tw/products/82074/reviews",
+}
+
+st.markdown('<br>' * 3, unsafe_allow_html=True)
+
+
+
 
 # 顯示每項產品的資訊
-for product in products_data:
-    # 使用 beta_columns 將文本顯示在圖片旁邊
+for i in range(18):  # 修改範圍為18
+    sql_material = select_1(i)  # 總資料庫，根據迴圈i值取得對應的資料
+
+    product_data = {
+        "photo_url": image_dict[i],
+        "brand": mark[i],
+        "name": sql_material[1],  # 資料庫第1個欄位
+        "rating": sql_material[2],  # 資料庫第2個欄位
+        "tags": sql_material[3],  # 資料庫第3個欄位
+        "Comment": product_url_dict[i],
+    }
+
+    # 使用 columns 將文本顯示在圖片旁邊
     col1, col2 = st.columns([1, 2])
-    
-    # 調整圖片大小
+
     col1.image(
-        product["photo_url"],
-        caption=f"{product['brand']} - {product['name']}",
-        # use_column_width=True,
-        width=200,  # 設定圖片寬度為300像素
-        # height=300,  # 設定圖片高度為300像素
+        product_data["photo_url"],
+        use_column_width=False,  # 不使用欄位寬度
+        width=200,  # 設定圖片寬度為200像素
     )
-    
-    col2.write(f"**品牌:** {product['brand']}")
-    col2.write(f"**產品名稱:** {product['name']}")
-    col2.write(f"**星數:** {product['rating']}")
-    col2.write(f"**效果:** {', '.join(product['tags'])}")
-    st.write("---")  # 分隔每項產品
+
+    col2.write(f"**品牌:** {product_data['brand']}", unsafe_allow_html=True)
+    col2.write(f"**產品名稱:** {product_data['name']}", unsafe_allow_html=True)
+    col2.write(f"**星數:** {product_data['rating']}", unsafe_allow_html=True)
+    col2.write(f"**效果:** {product_data['tags']}", unsafe_allow_html=True)
+    col2.markdown(f" [**更多評論**]({product_data['Comment']})", unsafe_allow_html=True)
+
+    st.markdown("---")  # 分隔每項產品
