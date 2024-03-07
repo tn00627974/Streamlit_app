@@ -1,2 +1,2 @@
-# 忽略 config.ini
-config.ini
+# 忽略 /config.ini
+*.config.ini
