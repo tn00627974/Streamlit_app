@@ -1,3 +1,4 @@
 streamlit==1.31.1
 mysql-connector-python==8.3.0
 mysqlclient==2.2.4
+SQLAlchemy==2.0.25
