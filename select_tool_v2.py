@@ -7,15 +7,16 @@ import mysql.connector
 # config.read('config.ini')
 
 # Reading data
-toml_data = toml.load(".streamlit\secrets.toml")
+toml_data = toml.load(".streamlit/secrets.toml")
 # saving each credential into a variable
 
-host = toml_data.get('mysql', 'host')
-port = toml_data.get('mysql', 'port')
-user = toml_data.get('mysql', 'user')
-passwd = toml_data.get('mysql', 'passwd')
-db = toml_data.get('mysql', 'db')
-charset = toml_data.get('mysql', 'charset')
+# 將 toml_data 中的屬性取出
+host = toml_data["mysql"]["host"]
+port = toml_data["mysql"]["port"]
+user = toml_data["mysql"]["username"]
+passwd = toml_data["mysql"]["password"]
+db = toml_data["mysql"]["database"]
+charset = "utf8"  # 或其他適當的字符集
 
 mark = {
     0: "FOAM",
@@ -127,7 +128,7 @@ def select_1(product_id):
 
 
 def select_2(product_id, age_type):
-    conn = pymysql.connect(
+    conn = conn = mysql.connector.connect(
         host=host, port=port, user=user, passwd=passwd, db=db, charset=charset
     )
     print("Successfully connected!")
@@ -281,7 +282,7 @@ def load_js2(data):
 
 
 def push_db(id_tp):
-    conn = pymysql.connect(
+    conn = conn = mysql.connector.connect(
         host=host, port=port, user=user, passwd=passwd, db=db, charset=charset
     )
     print("Successfully connected!")
