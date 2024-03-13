@@ -41,7 +41,7 @@ st.set_page_config(
 )
 
 
-gif_url = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHl2d3cxdjMyOXBibXB0aXZuaWMwNzhocXRyNGxzOWhxZjJ4aHp3NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fpXkJeF3ppKUDX0Pp0/giphy.gif"
+gif_url = "https://media.giphy.com/media/oAjjyaboWN8h2xyPGF/giphy.gif"
 st.image(gif_url, caption="洗面乳推薦系統", use_column_width=True)
 
 # bar = st.progress(1)
