@@ -52,9 +52,9 @@ st.image(gif_url, caption="洗面乳推薦系統", use_column_width=True)
 
 
 mark = {
-        0: "FOAM", 1: "上山採藥", 2: "卵肌", 3: "極潤", 4: "極潤",
-        5: "豆乳", 6: "草本", 7: "Simple", 8: "Perfect Whip", 9: "雪肌粹",
-        10: "Biore", 11: "Biore", 12: "Bifesta", 13: "Biore", 14: "草本",
+        0: "FOAM", 1: "上山採藥", 2: "肌研", 3: "肌研", 4: "肌研",
+        5: "莎娜", 6: "露姬婷", 7: "清妍", 8: "專科", 9: "高絲",
+        10: "Biore", 11: "Biore", 12: "Bifesta", 13: "Biore", 14: "露姬婷",
         15: "Bifesta", 16: "Bifesta", 17: "Bifesta"
 }
 
