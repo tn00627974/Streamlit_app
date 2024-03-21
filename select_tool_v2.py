@@ -2,10 +2,6 @@ import json
 import toml
 import mysql.connector
 
-# import configparser
-# config = configparser.ConfigParser()
-# config.read('config.ini')
-
 # Reading data
 toml_data = toml.load(".streamlit/secrets.toml")
 # saving each credential into a variable
