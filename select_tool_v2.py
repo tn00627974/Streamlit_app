@@ -6,17 +6,17 @@ import mysql.connector
 # config = configparser.ConfigParser()
 # config.read('config.ini')
 
-# # Reading data
-# toml_data = toml.load(".streamlit/secrets.toml")
-# # saving each credential into a variable
+# Reading data
+toml_data = toml.load(".streamlit/secrets.toml")
+# saving each credential into a variable
 
-# 將 toml_data 中的屬性取出
-host = toml_data["mysql"]["host"]
-port = toml_data["mysql"]["port"]
-user = toml_data["mysql"]["username"]
-passwd = toml_data["mysql"]["password"]
-db = toml_data["mysql"]["database"]
-charset = "utf8"  # 或其他適當的字符集
+# # 將 toml_data 中的屬性取出
+# host = toml_data["mysql"]["host"]
+# port = toml_data["mysql"]["port"]
+# user = toml_data["mysql"]["username"]
+# passwd = toml_data["mysql"]["password"]
+# db = toml_data["mysql"]["database"]
+# charset = "utf8"  # 或其他適當的字符集
 
 mark = {
     0: "FOAM",
