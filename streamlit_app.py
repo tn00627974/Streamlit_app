@@ -3,9 +3,9 @@ from select_tool_v2 import select_1
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
 st.set_page_config(
-    page_title="洗面乳推薦系統_Web", #標籤
+    page_title="洗面乳推薦系統_Web", #網頁標籤顯示名稱
     # page_icon="random", #網頁隨機標籤
-    layout="centered",
+    layout="centered", #置網頁中
     # initial_sidebar_state="collapsed",
 )
 
