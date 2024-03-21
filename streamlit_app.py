@@ -1,47 +1,17 @@
 import streamlit as st
 from select_tool_v2 import select_1
-# 定義產品資料
-
-# This code is different for each deployed app.
-# CURRENT_THEME = "blue"
-# IS_DARK_THEME = True
-# EXPANDER_TEXT = """
-#     This is a custom theme. You can enable it by copying the following code
-#     to `.streamlit/config.toml`:
-
-#     ```python
-#     [theme]
-#     primaryColor = "#E694FF"
-#     backgroundColor = "#00172B"
-#     secondaryBackgroundColor = "#0083B8"
-#     textColor = "#C6CDD4"
-#     font = "sans-serif"
-#     ```
-#     """
-
-
-# with st.chat_message("user"):  # 或者寫 "human"
-#     st.write("Hi 👋，請問你是誰？")
-
-# # 另一種寫法
-# message = st.chat_message("assistant")  # 或者寫 "ai"
-# # message = st.chat_message("assistant", avatar="🦖")  # 自訂頭像
-# message.write("你好！我是 ChatBot 🤖，可以回答各種問題，提供資訊。")
-# message.write("有什麼我可以幫助你的嗎？")
-
-# st.chat_input("Say something...")
-
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
 st.set_page_config(
-    page_title="洗面乳推薦系統_Web",
-    # page_icon="random",
+    page_title="洗面乳推薦系統_Web", #標籤
+    # page_icon="random", #網頁隨機標籤
     layout="centered",
     # initial_sidebar_state="collapsed",
 )
 
-
+# git連結
 gif_url = "https://media.giphy.com/media/oAjjyaboWN8h2xyPGF/giphy.gif"
+# git圖片下方的主題
 st.image(gif_url, caption="洗面乳推薦系統", use_column_width=True)
 
 # bar = st.progress(1)
