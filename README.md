@@ -10,9 +10,10 @@ pip install streamlit
 streamlit run streamlit_app
 
 
-備註 : 網頁的內容資料是由透過我們資料庫做連線,內容可能會有錯誤 (因為我們的資料庫並不公開,請填入您的資料庫streamlit.toml裡)
+備註 : 網頁的內容資料是由透過我們資料庫做連線(因為我們的資料庫並不公開,請填入您的資料庫streamlit.toml裡)
 可查閱官方文件 https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app/secrets-management
 
+streamlit.toml的路徑請參考以下
 ![image](https://github.com/tn00627974/streamlit_app/assets/139155210/4aec55cf-ffb5-4da7-a5f7-9f05a071fed7)
 
 
