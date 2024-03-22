@@ -14,6 +14,7 @@ streamlit run streamlit_app
 可查閱官方文件 https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app/secrets-management
 
 streamlit.toml的路徑請參考以下
+
 ![image](https://github.com/tn00627974/streamlit_app/assets/139155210/4aec55cf-ffb5-4da7-a5f7-9f05a071fed7)
 
 
