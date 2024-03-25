@@ -2,7 +2,7 @@
 
 ●使用語言 : python
 
-●需先在你的 編碼器 or terminal安裝以下指令 
+●需先在你的 編碼器 or terminal安裝以下指令\n
 
 pip install streamlit
 
