@@ -5,13 +5,12 @@
 
 ●需先在你的 編碼器 or terminal安裝以下指令
 
-
-pip install streamlit
-
+    pip install streamlit
 
 ●你需要在terminal上執行streamlit run <py程式檔案路徑> ,會彈跳出一個內部網頁可預覽
+    
+    streamlit run streamlit_app.py
 
-streamlit run streamlit_app.py
 
 備註 : 網頁的內容資料是由透過我們資料庫做連線(因為我們的資料庫並不公開,請填入您的資料庫secrest.toml裡)
 可查閱官方文件 
