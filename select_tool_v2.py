@@ -2,9 +2,9 @@ import json
 import toml
 import mysql.connector
 
-# Reading data
-toml_data = toml.load(".streamlit/secrets.toml")
-# saving each credential into a variable
+# # Reading data
+# toml_data = toml.load(".streamlit/secrets.toml")
+# # saving each credential into a variable
 
 # 將 toml_data 中的屬性取出
 host = toml_data["mysql"]["host"]
