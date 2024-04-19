@@ -28,47 +28,47 @@ mark = {
         15: "Bifesta", 16: "Bifesta", 17: "Bifesta"
 }
 
-# image_dict = {
-#     0: "https://imgur.com/ojqgngi.jpg",
-#     1: "https://imgur.com/tlAiF6h.jpg",
-#     2: "https://imgur.com/GMueS4b.jpg",
-#     3: "https://imgur.com/N9Omj8j.jpg",
-#     4: "https://imgur.com/jYEZal6.jpg",
-#     5: "https://imgur.com/OmgeQOn.jpg",
-#     6: "https://imgur.com/JLAYFzr.jpg",
-#     7: "https://imgur.com/q3mgxPe.jpg",
-#     8: "https://imgur.com/iTWuoIU.jpg",
-#     9: "https://imgur.com/jzy7shE.jpg",
-#     10: "https://imgur.com/y95d5Rb.jpg",
-#     11: "https://imgur.com/KMt0vV0.jpg",
-#     12: "https://imgur.com/z63oxxf.jpg",
-#     13: "https://imgur.com/U86lFJk.jpg",
-#     14: "https://imgur.com/PIFIWCL.jpg",
-#     15: "https://imgur.com/3s8yCHu.jpg",
-#     16: "https://imgur.com/BjcObqE.jpg",
-#     17: "https://imgur.com/hvUIe6p.jpg"
-# }
-
 image_dict = {
-    0: "https://storage.googleapis.com/aiface/Q/0.jpg",
-    1: "https://storage.googleapis.com/aiface/Q/1.jpg",
-    2: "https://storage.googleapis.com/aiface/Q/2.jpg",
-    3: "https://storage.googleapis.com/aiface/Q/3.jpg",
-    4: "https://storage.googleapis.com/aiface/Q/4.jpg",
-    5: "https://storage.googleapis.com/aiface/Q/5.jpg",
-    6: "https://storage.googleapis.com/aiface/Q/6.jpg",
-    7: "https://storage.googleapis.com/aiface/Q/7.jpg",
-    8: "https://storage.googleapis.com/aiface/Q/8.jpg",
-    9: "https://storage.googleapis.com/aiface/Q/9.jpg",
-    10: "https://storage.googleapis.com/aiface/Q/10.jpg",
-    11: "https://storage.googleapis.com/aiface/Q/11.jpg",
-    12: "https://storage.googleapis.com/aiface/Q/12.jpg",
-    13: "https://storage.googleapis.com/aiface/Q/13.jpg",
-    14: "https://storage.googleapis.com/aiface/Q/14.jpg",
-    15: "https://storage.googleapis.com/aiface/Q/15.jpg",
-    16: "https://storage.googleapis.com/aiface/Q/16.jpg",
-    17: "https://storage.googleapis.com/aiface/Q/17.jpg"
+    0: "https://imgur.com/ojqgngi.jpg",
+    1: "https://imgur.com/tlAiF6h.jpg",
+    2: "https://imgur.com/GMueS4b.jpg",
+    3: "https://imgur.com/N9Omj8j.jpg",
+    4: "https://imgur.com/jYEZal6.jpg",
+    5: "https://imgur.com/OmgeQOn.jpg",
+    6: "https://imgur.com/JLAYFzr.jpg",
+    7: "https://imgur.com/q3mgxPe.jpg",
+    8: "https://imgur.com/iTWuoIU.jpg",
+    9: "https://imgur.com/jzy7shE.jpg",
+    10: "https://imgur.com/y95d5Rb.jpg",
+    11: "https://imgur.com/KMt0vV0.jpg",
+    12: "https://imgur.com/z63oxxf.jpg",
+    13: "https://imgur.com/U86lFJk.jpg",
+    14: "https://imgur.com/PIFIWCL.jpg",
+    15: "https://imgur.com/3s8yCHu.jpg",
+    16: "https://imgur.com/BjcObqE.jpg",
+    17: "https://imgur.com/hvUIe6p.jpg"
 }
+
+# image_dict = {
+#     0: "https://storage.googleapis.com/aiface/Q/0.jpg",
+#     1: "https://storage.googleapis.com/aiface/Q/1.jpg",
+#     2: "https://storage.googleapis.com/aiface/Q/2.jpg",
+#     3: "https://storage.googleapis.com/aiface/Q/3.jpg",
+#     4: "https://storage.googleapis.com/aiface/Q/4.jpg",
+#     5: "https://storage.googleapis.com/aiface/Q/5.jpg",
+#     6: "https://storage.googleapis.com/aiface/Q/6.jpg",
+#     7: "https://storage.googleapis.com/aiface/Q/7.jpg",
+#     8: "https://storage.googleapis.com/aiface/Q/8.jpg",
+#     9: "https://storage.googleapis.com/aiface/Q/9.jpg",
+#     10: "https://storage.googleapis.com/aiface/Q/10.jpg",
+#     11: "https://storage.googleapis.com/aiface/Q/11.jpg",
+#     12: "https://storage.googleapis.com/aiface/Q/12.jpg",
+#     13: "https://storage.googleapis.com/aiface/Q/13.jpg",
+#     14: "https://storage.googleapis.com/aiface/Q/14.jpg",
+#     15: "https://storage.googleapis.com/aiface/Q/15.jpg",
+#     16: "https://storage.googleapis.com/aiface/Q/16.jpg",
+#     17: "https://storage.googleapis.com/aiface/Q/17.jpg"
+# }
 
 
 #更多評論
