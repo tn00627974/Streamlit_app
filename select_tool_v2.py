@@ -31,54 +31,54 @@ mark = {
     13: "Biore",
     14: "草本",
     15: "Bifesta",
-    16: "Bifesta",
+    16: "Bifesta", 
     17: "Bifesta",
 }
 
 
-# image_dict = {
-#     0: "https://imgur.com/ojqgngi.jpg",
-#     1: "https://imgur.com/tlAiF6h.jpg",
-#     2: "https://imgur.com/GMueS4b.jpg",
-#     3: "https://imgur.com/N9Omj8j.jpg",
-#     4: "https://imgur.com/jYEZal6.jpg",
-#     5: "https://imgur.com/OmgeQOn.jpg",
-#     6: "https://imgur.com/JLAYFzr.jpg",
-#     7: "https://imgur.com/q3mgxPe.jpg",
-#     8: "https://imgur.com/iTWuoIU.jpg",
-#     9: "https://imgur.com/jzy7shE.jpg",
-#     10: "https://imgur.com/y95d5Rb.jpg",
-#     11: "https://imgur.com/KMt0vV0.jpg",
-#     12: "https://imgur.com/z63oxxf.jpg",
-#     13: "https://imgur.com/U86lFJk.jpg",
-#     14: "https://imgur.com/PIFIWCL.jpg",
-#     15: "https://imgur.com/3s8yCHu.jpg",
-#     16: "https://imgur.com/BjcObqE.jpg",
-#     17: "https://imgur.com/hvUIe6p.jpg"
-# }
-
-end_point = "https://ebad-1-164-249-239.ngrok-free.app"
-
 image_dict = {
-    0: f"{end_point}/face_rank/A0.jpg",
-    1: f"{end_point}/face_rank/A1.jpg",
-    2: f"{end_point}/face_rank/A2.jpg",
-    3: f"{end_point}/face_rank/A3.jpg",
-    4: f"{end_point}/face_rank/A4.jpg",
-    5: f"{end_point}/face_rank/A5.jpg",
-    6: f"{end_point}/face_rank/A6.jpg",
-    7: f"{end_point}/face_rank/A7.jpg",
-    8: f"{end_point}/face_rank/A8.jpg",
-    9: f"{end_point}/face_rank/A9.jpg",
-    11: f"{end_point}/face_rank/A11.jpg",
-    10: f"{end_point}/face_rank/A10.jpg",
-    12: f"{end_point}/face_rank/A12.jpg",
-    13: f"{end_point}/face_rank/A13.jpg",
-    14: f"{end_point}/face_rank/A14.jpg",
-    15: f"{end_point}/face_rank/A15.jpg",
-    16: f"{end_point}/face_rank/A16.jpg",
-    17: f"{end_point}/face_rank/A17.jpg",
+    0: "https://imgur.com/ojqgngi.jpg",
+    1: "https://imgur.com/tlAiF6h.jpg",
+    2: "https://imgur.com/GMueS4b.jpg",
+    3: "https://imgur.com/N9Omj8j.jpg",
+    4: "https://imgur.com/jYEZal6.jpg",
+    5: "https://imgur.com/OmgeQOn.jpg",
+    6: "https://imgur.com/JLAYFzr.jpg",
+    7: "https://imgur.com/q3mgxPe.jpg",
+    8: "https://imgur.com/iTWuoIU.jpg",
+    9: "https://imgur.com/jzy7shE.jpg",
+    10: "https://imgur.com/y95d5Rb.jpg",
+    11: "https://imgur.com/KMt0vV0.jpg",
+    12: "https://imgur.com/z63oxxf.jpg",
+    13: "https://imgur.com/U86lFJk.jpg",
+    14: "https://imgur.com/PIFIWCL.jpg",
+    15: "https://imgur.com/3s8yCHu.jpg",
+    16: "https://imgur.com/BjcObqE.jpg",
+    17: "https://imgur.com/hvUIe6p.jpg"
 }
+
+# end_point = "https://ebad-1-164-249-239.ngrok-f`ree.app"
+
+# image_dict = {
+#     0: f"{end_point}/face_rank/A0.jpg",
+#     1: f"{end_point}/face_rank/A1.jpg",
+#     2: f"{end_point}/face_rank/A2.jpg",
+#     3: f"{end_point}/face_rank/A3.jpg",
+#     4: f"{end_point}/face_rank/A4.jpg",
+#     5: f"{end_point}/face_rank/A5.jpg",
+#     6: f"{end_point}/face_rank/A6.jpg",
+#     7: f"{end_point}/face_rank/A7.jpg",
+#     8: f"{end_point}/face_rank/A8.jpg",
+#     9: f"{end_point}/face_rank/A9.jpg",
+#     11: f"{end_point}/face_rank/A11.jpg",
+#     10: f"{end_point}/face_rank/A10.jpg",
+#     12: f"{end_point}/face_rank/A12.jpg",
+#     13: f"{end_point}/face_rank/A13.jpg",
+#     14: f"{end_point}/face_rank/A14.jpg",
+#     15: f"{end_point}/face_rank/A15.jpg",
+#     16: f"{end_point}/face_rank/A16.jpg",
+#     17: f"{end_point}/face_rank/A17.jpg",
+# }
 
 
 product_url_dict = {
