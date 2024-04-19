@@ -49,27 +49,6 @@ image_dict = {
     17: "https://imgur.com/hvUIe6p.jpg"
 }
 
-# image_dict = {
-#     0: "https://storage.googleapis.com/aiface/Q/0.jpg",
-#     1: "https://storage.googleapis.com/aiface/Q/1.jpg",
-#     2: "https://storage.googleapis.com/aiface/Q/2.jpg",
-#     3: "https://storage.googleapis.com/aiface/Q/3.jpg",
-#     4: "https://storage.googleapis.com/aiface/Q/4.jpg",
-#     5: "https://storage.googleapis.com/aiface/Q/5.jpg",
-#     6: "https://storage.googleapis.com/aiface/Q/6.jpg",
-#     7: "https://storage.googleapis.com/aiface/Q/7.jpg",
-#     8: "https://storage.googleapis.com/aiface/Q/8.jpg",
-#     9: "https://storage.googleapis.com/aiface/Q/9.jpg",
-#     10: "https://storage.googleapis.com/aiface/Q/10.jpg",
-#     11: "https://storage.googleapis.com/aiface/Q/11.jpg",
-#     12: "https://storage.googleapis.com/aiface/Q/12.jpg",
-#     13: "https://storage.googleapis.com/aiface/Q/13.jpg",
-#     14: "https://storage.googleapis.com/aiface/Q/14.jpg",
-#     15: "https://storage.googleapis.com/aiface/Q/15.jpg",
-#     16: "https://storage.googleapis.com/aiface/Q/16.jpg",
-#     17: "https://storage.googleapis.com/aiface/Q/17.jpg"
-# }
-
 
 #更多評論
 product_url_dict = {
